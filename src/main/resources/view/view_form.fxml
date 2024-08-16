@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#606061" height="536.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <ImageView fitHeight="536.0" fitWidth="800.0" layoutX="-1.0" layoutY="-1.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dashboard.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbl" layoutX="60.0" layoutY="92.0" opacity="0.87" prefHeight="345.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="124.80002212524414" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="135.99998474121094" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="148.800048828125" text="Address" />
+            <TableColumn fx:id="colContactNumber" prefWidth="131.199951171875" text="Contact Number" />
+            <TableColumn fx:id="colBirthday" prefWidth="140.0" text="Birthday" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnReLoad" layoutX="337.0" layoutY="458.0" onAction="#btnReLoadOnAction" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #497985; -fx-background-radius: 20; -fx-border-width: 20;" text="Reload" textFill="#faf7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label prefHeight="65.0" prefWidth="799.0" style="-fx-background-color: #0a0100;" text="                    View Customer Table" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
